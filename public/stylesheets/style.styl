@@ -1,3 +1,13 @@
+@font-face
+   font-family BrawlerRegular
+   font-style normal
+   font-weight normal
+   src url('Brawler-webfont.eot')
+   src url('Brawler-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Brawler-webfont.woff') format('woff'),
+       url('Brawler-webfont.ttf') format('truetype'),
+       url('Brawler-webfont.svg#BrawlerRegular') format('svg')
+
 body
   padding: 50px
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
@@ -23,7 +33,8 @@ a
   left: 0
 
   h1
-    font-size: 86px
+    font 86px 'BrawlerRegular', Arial, sans-serif
+    letter-spacing 0
     position: relative
     left: 0
 
@@ -31,8 +42,9 @@ a
   display: block
   position: absolute
   left: 0
-  top: 180px
+  top: 100px
 
   h1
+    font 86px 'BrawlerRegular', Arial, sans-serif
     position: relative
     left: 0
