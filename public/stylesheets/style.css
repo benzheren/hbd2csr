@@ -28,3 +28,13 @@ a {
   position: relative;
   left: 0;
 }
+#cover-bloc2 {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 180px;
+}
+#cover-bloc2 h1 {
+  position: relative;
+  left: 0;
+}
