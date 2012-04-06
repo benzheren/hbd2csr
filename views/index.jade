@@ -1,3 +1,12 @@
-h1= title
-p Welcome to #{title}
+#scene
+  .scrollblock
+    #cover
+      #cover-bloc1
+        h1 Hello World!
+      #cover-block2
+        h1 Express
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+script(src='/javascripts/jquery.scrollorama.js')
+script
+  var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
+  scrollorama.animate('#cover-bloc1 h1',{ delay: 0, duration: 300, property:'left', start:0, end: -1000, pin: true});

@@ -5,3 +5,26 @@ body {
 a {
   color: #00b7ff;
 }
+#scene {
+  height: 20000px;
+}
+#cover {
+  height: 400px;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -150px;
+  position: fixed;
+  top: 50%;
+  width: 960px;
+  z-index: 180;
+}
+#cover-bloc1 {
+  display: block;
+  position: absolute;
+  left: 0;
+}
+#cover-bloc1 h1 {
+  font-size: 86px;
+  position: relative;
+  left: 0;
+}
