@@ -47,3 +47,26 @@ a {
   position: relative;
   left: 0;
 }
+#places {
+  background-color: #ffd500;
+  height: 6050px;
+  position: fixed;
+  width: 6050px;
+}
+#first-place {
+  background-color: #fff;
+  float: left;
+  height: 3000px;
+  width: 3000px;
+  margin-right: 30px;
+  position: relative;
+  z-index: 40;
+}
+#first-place-in {
+  bottom: 0;
+  margin: 0 20px 20px 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  width: 300px;
+}
