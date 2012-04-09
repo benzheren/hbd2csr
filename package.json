@@ -1,6 +1,6 @@
 {
-    "name": "application-name"
-  , "version": "0.0.1"
+    "name": "hbd2csr"
+  , "version": "0.1.0"
   , "private": true
   , "engines": {
       "node": "0.6.x"
@@ -10,5 +10,7 @@
       "express": "2.5.9"
     , "stylus": ">= 0.0.1"
     , "jade": ">= 0.0.1"
+    , "nib": ">= 0.4.0"
+    , "coffee-script": "1.2.0"
   }
 }
