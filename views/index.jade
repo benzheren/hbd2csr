@@ -25,7 +25,10 @@
       #fourth-place.place
         #fourth-place-in
           p.p-text1 2010
-          p.p-text2 @JOUY-EN-JOSAS 
+          p.p-text2 @JOUY-EN-JOSAS
+  .scrollblock
+    #moments
+      #moments-cover &nbsp;
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 script(src='/javascripts/jquery.scrollorama.js')
 :coffeescript
@@ -117,6 +120,7 @@ script(src='/javascripts/jquery.scrollorama.js')
     property: 'left',
     start: -100,
     end: 0
+    pin: true
 
   scrollorama.animate '#places',
     property: 'rotate',
@@ -135,3 +139,10 @@ script(src='/javascripts/jquery.scrollorama.js')
     duration: 1000
     start: -1175,
     end: -2750
+
+  scrollorama.animate '#moments-cover',
+    delay: 1500,
+    duration: 1000,
+    property: 'height',
+    start: 0,
+    end: 1540
