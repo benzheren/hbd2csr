@@ -1,89 +1,28 @@
-@font-face {
-  font-family: BrawlerRegular;
-  font-style: normal;
-  font-weight: normal;
-  src: url("Brawler-webfont.eot");
-  src: url("Brawler-webfont.eot?#iefix") format('embedded-opentype'), url("Brawler-webfont.woff") format('woff'), url("Brawler-webfont.ttf") format('truetype'), url("Brawler-webfont.svg#BrawlerRegular") format('svg');
-}
-@font-face {
-  font-family: QuicksandBook;
-  src: url("Quicksand_Book-webfont.eot");
-  src: url("Quicksand_Book-webfont.eot?#iefix") format('embedded-opentype'), url("Quicksand_Book-webfont.woff") format('woff'), url("Quicksand_Book-webfont.ttf") format('truetype'), url("Quicksand_Book-webfont.svg#QuicksandBook") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-a {
-  color: #00b7ff;
-}
-#scene {
-  height: 20000px;
-}
-#cover {
-  height: 400px;
-  left: 50%;
-  margin-left: -480px;
-  margin-top: -150px;
-  position: fixed;
-  top: 50%;
-  width: 960px;
-  z-index: 180;
-}
-#cover-bloc1 {
-  display: block;
-  position: absolute;
-  left: 0;
-}
-#cover-bloc1 h1 {
-  font: 86px 'BrawlerRegular', Arial, sans-serif;
-  letter-spacing: 0;
-  position: relative;
-  left: 0;
-}
-#cover-bloc2 {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100px;
-}
-#cover-bloc2 h1 {
-  font: 86px 'BrawlerRegular', Arial, sans-serif;
-  position: relative;
-  left: 0;
-}
-#places {
-  background-color: #ffd500;
-  height: 6050px;
-  position: fixed;
-  width: 6050px;
-  font: 40px 'QuicksandBook', Arial, sans-serif;
-}
-#first-place {
-  background-color: #fff;
-  float: left;
-  height: 3000px;
-  width: 3000px;
-  margin-right: 30px;
-  position: relative;
-  z-index: 40;
-}
-#first-place-map {
-  background-image: url("/images/nyc.png");
-  bottom: 0;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  width: 1500px;
-  height: 850px;
-}
-#first-place-in {
-  bottom: 0;
-  margin: 0 20px 20px 0;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  width: 300px;
-}
+@font-face{font-family:BrawlerRegular;font-style:normal;font-weight:normal;src:url("Brawler-webfont.eot");src:url("Brawler-webfont.eot?#iefix") format('embedded-opentype'),url("Brawler-webfont.woff") format('woff'),url("Brawler-webfont.ttf") format('truetype'),url("Brawler-webfont.svg#BrawlerRegular") format('svg')}
+@font-face{font-family:QuicksandBook;src:url("Quicksand_Book-webfont.eot");src:url("Quicksand_Book-webfont.eot?#iefix") format('embedded-opentype'),url("Quicksand_Book-webfont.woff") format('woff'),url("Quicksand_Book-webfont.ttf") format('truetype'),url("Quicksand_Book-webfont.svg#QuicksandBook") format('svg');font-weight:normal;font-style:normal}
+body{padding:50px;font:14px "Lucida Grande",Helvetica,Arial,sans-serif}
+a{color:#00b7ff}
+#scene{height:20000px}
+#cover{height:400px;left:50%;margin-left:-480px;margin-top:-150px;position:fixed;top:50%;width:960px;z-index:180}
+#cover-bloc1{display:block;position:absolute;left:0;}
+#cover-bloc1 h1{font:86px 'BrawlerRegular',Arial,sans-serif;letter-spacing:0;position:relative;left:0}
+#cover-bloc2{display:block;position:absolute;left:0;top:100px;}
+#cover-bloc2 h1{font:86px 'BrawlerRegular',Arial,sans-serif;position:relative;left:0}
+#places{background-color:#f0788c;height:6050px;position:fixed;width:6050px;font:40px 'QuicksandBook',Arial,sans-serif}
+.place{cursor:pointer}
+#first-place{background-color:#fff;float:left;height:3000px;width:3000px;margin-right:30px;position:relative;z-index:40}
+#first-place-map{background:url("/images/nyc.png") no-repeat 250px 100px;bottom:0;position:absolute;right:0;text-align:right;width:1500px;height:850px}
+#first-place-in{bottom:0;margin:0 20px 20px 0;position:absolute;right:0;text-align:right;width:300px;}
+#first-place-in .p-text2{color:#6f6f6f}
+#second-place{background-color:#f0788c;float:left;height:3000px;width:3000px;position:relative;text-align:left}
+#second-place-in{bottom:0;left:0;position:absolute;width:500px;margin:0 0 20px 20px}
+#places-middle{clear:both;height:30px}
+#third-place{background-color:#38300a;float:left;margin-right:30px;position:relative;text-align:right;width:3000px}
+#third-place-in{color:#b6b6b6;height:150px;margin:20px 20px 0 0;position:absolute;right:0;top:0;text-align:right;width:500px;display:block;}
+#third-place-in .p-text2{color:#fff}
+#fourth-place{background-color:#f6b1c3;float:left;position:relative;width:3000px;height:3000px}
+#fourth-place-in{height:150px;position:absolute;left:0;top:0;margin:20px 0 0 20px;width:300px}
+.p-text1{font-size:27px}
+.p-text2{font-size:19px}
+#moments{position:relative;z-index:190}
+#moments-cover{background-color:#fff;position:fixed;left:-3000px;top:-100px;height:0;width:6000px;overflow:hidden;-webkit-transform:rotate(-21deg);-moz-transform:rotate(-21deg);-o-transform:rotate(-21deg);-ms-transform:rotate(-21deg);transform:rotate(-21deg);display:block;z-index:60}

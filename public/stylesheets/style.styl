@@ -1,3 +1,5 @@
+@import 'nib'
+
 @font-face
    font-family BrawlerRegular
    font-style normal
@@ -60,11 +62,14 @@ a
     left: 0
 
 #places
-  background-color: #FFD500
+  background-color: #F0788C
   height: 6050px
   position: fixed
   width: 6050px
   font 40px 'QuicksandBook', Arial, sans-serif
+
+.place
+  cursor: pointer
 
 #first-place
   background-color: #FFF
@@ -76,7 +81,7 @@ a
   z-index: 40
 
 #first-place-map
-  background-image: url('/images/nyc.png')
+  background: url('/images/nyc.png') no-repeat 250px 100px
   bottom: 0
   position: absolute
   right: 0
@@ -91,3 +96,83 @@ a
   right: 0
   text-align: right
   width: 300px
+  .p-text2
+    color: #6F6F6F
+
+#second-place
+  background-color: #F0788C
+  float: left
+  height: 3000px
+  width: 3000px
+  position: relative
+  text-align: left
+
+#second-place-in
+  bottom: 0
+  left: 0
+  position: absolute
+  width: 500px
+  margin: 0 0 20px 20px
+
+#places-middle
+  clear: both
+  height: 30px
+
+#third-place
+  background-color: #38300A
+  float: left
+  margin-right: 30px
+  position: relative
+  text-align: right
+  width: 3000px
+
+#third-place-in
+  color: #B6B6B6
+  height: 150px
+  margin: 20px 20px 0 0
+  position: absolute
+  right: 0
+  top: 0
+  text-align: right
+  width: 500px
+  display: block
+  .p-text2
+    color: #FFF
+
+#fourth-place
+  background-color: #F6B1C3
+  float: left
+  position: relative
+  width: 3000px
+  height: 3000px
+
+#fourth-place-in
+  height: 150px
+  position: absolute
+  left: 0
+  top: 0
+  margin: 20px 0 0 20px
+  width: 300px
+
+.p-text1
+  font-size: 27px
+
+.p-text2
+  font-size: 19px
+
+#moments
+  position: relative
+  z-index: 190
+
+#moments-cover
+  background-color: #FFF
+  position: fixed
+  left: -3000px
+  top: -100px
+  height: 0
+  width: 6000px
+  overflow: hidden
+  transform: rotate(-21deg)
+  display: block
+  z-index: 60
+  
