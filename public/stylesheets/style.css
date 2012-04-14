@@ -61,6 +61,9 @@ a {
   width: 6050px;
   font: 40px 'QuicksandBook', Arial, sans-serif;
 }
+.place {
+  cursor: pointer;
+}
 #first-place {
   background-color: #fff;
   float: left;
