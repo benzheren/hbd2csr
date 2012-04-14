@@ -4,18 +4,26 @@
  */
 
 var express = require('express')
-  , routes = require('./routes');
+  , routes = require('./routes')
+  , stylus = require('stylus')
+  , nib = require('nib');
 
 var app = module.exports = express.createServer();
 
 // Configuration
+function compile(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .set('compress', true)
+    .use(nib());
+}
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(require('stylus').middleware({ src: __dirname + '/public' }));
+  app.use(stylus.middleware({ src: __dirname + '/public', compile: compile }));
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
 });
