@@ -2,16 +2,30 @@
   .scrollblock
     #cover
       #cover-bloc1
-        h1 Hello World!
+        h1 Happy Birthday,
       #cover-bloc2
-        h1 Express
+        h1 Sylvia!
   .scrollblock
     #places
       #first-place
         #first-place-map
         #first-place-in
-          p.p-text1 New York City
+          p.p-text1 2008@NYC
           p.p-text2 230 5th Avenue, New York, NY
+      #second-place
+        #second-place-in
+          p.p-text1 2009@SEOUL
+          p.p-text2 Seoul
+      #places-middle
+        &nbps;
+      #third-place
+        #third-place-in
+          p.p-text1 2010@JOUY-EN-JOSAS
+          p.p-text2 Paris
+      #fourth-place
+        #fourth-place-in
+          p.p-text1 2011@CHICAGO
+          p.p-text2 Chicago
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 script(src='/javascripts/jquery.scrollorama.js')
 :coffeescript
@@ -31,15 +45,29 @@ script(src='/javascripts/jquery.scrollorama.js')
     pin: true
   
   scrollorama.animate '#first-place-map',
-    delay: 800
-    duration: 1000
+    delay: 800,
+    duration: 1000,
     property: 'opacity',
     start: 0,
     end: 0.6
 
+  scrollorama.animate '#third-place',
+    delay: 1600,
+    duration: 1200,
+    property: 'height',
+    start: 0,
+    end: 4000
+
+  scrollorama.animate '#fourth-place',
+    delay: 1600,
+    duration: 1200,
+    property: 'width',
+    start: 0,
+    end: 3000
+
   scrollorama.animate '#places',
     property: 'rotate',
-    duration: 1000
+    duration: 1000,
     start: 0,
     end: -21
 
@@ -47,10 +75,10 @@ script(src='/javascripts/jquery.scrollorama.js')
     property: 'left',
     duration: 1000
     start: 0,
-    end: -2048
+    end: -2348
 
   scrollorama.animate '#places',
     property: 'top',
     duration: 1000
     start: -1175,
-    end: -2703
+    end: -2750
