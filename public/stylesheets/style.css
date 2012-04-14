@@ -11,18 +11,20 @@ a{color:#00b7ff}
 #places{background-color:#f0788c;height:6050px;position:fixed;width:6050px;font:40px 'QuicksandBook',Arial,sans-serif}
 .place{cursor:pointer}
 #first-place{background-color:#fff;float:left;height:3000px;width:3000px;margin-right:30px;position:relative;z-index:40}
-#first-place-map{background:url("/images/nyc.png") no-repeat 250px 100px;bottom:0;position:absolute;right:0;text-align:right;width:1500px;height:850px}
+#first-place-map{background:url("/images/nyc.png") no-repeat 450px 300px;bottom:0;position:absolute;right:0;text-align:right;width:1500px;height:850px}
 #first-place-in{bottom:0;margin:0 20px 20px 0;position:absolute;right:0;text-align:right;width:300px;}
-#first-place-in .p-text2{color:#6f6f6f}
+#first-place-in .p-text2{color:#4f4f4f}
 #second-place{background-color:#f0788c;float:left;height:3000px;width:3000px;position:relative;text-align:left}
-#second-place-in{bottom:0;left:0;position:absolute;width:500px;margin:0 0 20px 20px}
+#second-place-in{bottom:0;left:0;position:absolute;width:500px;margin:0 0 20px 20px;}
+#second-place-in .p-text2{color:#4f4f4f}
 #places-middle{clear:both;height:30px}
 #third-place{background-color:#38300a;float:left;margin-right:30px;position:relative;text-align:right;width:3000px}
 #third-place-in{color:#b6b6b6;height:150px;margin:20px 20px 0 0;position:absolute;right:0;top:0;text-align:right;width:500px;display:block;}
 #third-place-in .p-text2{color:#fff}
 #fourth-place{background-color:#f6b1c3;float:left;position:relative;width:3000px;height:3000px}
-#fourth-place-in{height:150px;position:absolute;left:0;top:0;margin:20px 0 0 20px;width:300px}
-.p-text1{font-size:27px}
+#fourth-place-in{height:150px;position:absolute;left:0;top:0;margin:20px 0 0 20px;width:300px;}
+#fourth-place-in .p-text2{color:#4f4f4f}
+.p-text1{font-size:27px;font-weight:bold}
 .p-text2{font-size:19px}
 #moments{position:relative;z-index:190}
 #moments-cover{background-color:#fff;position:fixed;left:-3000px;top:-100px;height:0;width:6000px;overflow:hidden;-webkit-transform:rotate(-21deg);-moz-transform:rotate(-21deg);-o-transform:rotate(-21deg);-ms-transform:rotate(-21deg);transform:rotate(-21deg);display:block;z-index:60}
