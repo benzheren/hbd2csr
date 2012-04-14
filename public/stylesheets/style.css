@@ -87,6 +87,9 @@ a {
   text-align: right;
   width: 300px;
 }
+#first-place-in .p-text2 {
+  color: #6f6f6f;
+}
 #second-place {
   background-color: #ffd500;
   float: left;
@@ -99,7 +102,7 @@ a {
   bottom: 0;
   left: 0;
   position: absolute;
-  width: 300px;
+  width: 500px;
   margin: 0 0 20px 20px;
 }
 #places-middle {
@@ -124,6 +127,9 @@ a {
   text-align: right;
   width: 500px;
   display: block;
+}
+#third-place-in .p-text2 {
+  color: #fff;
 }
 #fourth-place {
   background-color: #e9c92d;

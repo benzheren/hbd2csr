@@ -10,22 +10,22 @@
       #first-place
         #first-place-map
         #first-place-in
-          p.p-text1 2008@NYC
-          p.p-text2 230 5th Avenue, New York, NY
+          p.p-text1 2008
+          p.p-text2 230 Fifth Louge @NYC
       #second-place
         #second-place-in
-          p.p-text1 2009@SEOUL
-          p.p-text2 Seoul
+          p.p-text1 2011
+          p.p-text2 Boka Restaurant+Bar @CHICAGO
       #places-middle
         &nbps;
       #third-place
         #third-place-in
-          p.p-text1 2010@JOUY-EN-JOSAS
-          p.p-text2 Paris
+          p.p-text1  2009
+          p.p-text2 @SEOUL
       #fourth-place
         #fourth-place-in
-          p.p-text1 2011@CHICAGO
-          p.p-text2 Chicago
+          p.p-text1 2010
+          p.p-text2 @JOUY-EN-JOSAS 
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 script(src='/javascripts/jquery.scrollorama.js')
 :coffeescript
@@ -64,6 +64,34 @@ script(src='/javascripts/jquery.scrollorama.js')
     property: 'width',
     start: 0,
     end: 3000
+
+  scrollorama.animate '#third-place-in',
+    delay: 2000,
+    duration: 500,
+    property: 'opacity',
+    start: 0,
+    end: 1
+
+  scrollorama.animate '#fourth-place-in',
+    delay: 2500,
+    duration: 500,
+    property: 'opacity',
+    start: 0,
+    end: 1
+
+  scrollorama.animate '#second-place-in',
+    delay: 3000,
+    duration: 500,
+    property: 'opacity',
+    start: 0,
+    end: 1
+
+  scrollorama.animate '#second-place-in',
+    delay: 3000,
+    duration: 500,
+    property: 'left',
+    start: -100,
+    end: 0
 
   scrollorama.animate '#places',
     property: 'rotate',
