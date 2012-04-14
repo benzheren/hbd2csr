@@ -29,6 +29,21 @@
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 script(src='/javascripts/jquery.scrollorama.js')
 :coffeescript
+  $('#first-place').mouseover ->
+    console.log 'good'
+    if $(window).scrollTop() > 4000 and $(window).scrollTop() < 5000
+      $(this).animate {top: '+=20', left: '+=20'}, 200, () ->
+        $(this).animate {top: '-=20', left: '-=20'}, 200
+      return
+
+  $('#third-place').mouseover ->
+    console.log 'good'
+    if $(window).scrollTop() > 4000 and $(window).scrollTop() < 5000
+      $(this).animate {top: '-=20', left: '+=20'}, 200, () ->
+        $(this).animate {top: '+=20', left: '-=20'}, 200
+      return
+
+      
   scrollorama = $.scrollorama blocks:'.scrollblock'
   scrollorama.animate '#cover-bloc1 h1',
     delay: 200,

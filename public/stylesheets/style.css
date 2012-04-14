@@ -55,7 +55,7 @@ a {
   left: 0;
 }
 #places {
-  background-color: #ffd500;
+  background-color: #f0788c;
   height: 6050px;
   position: fixed;
   width: 6050px;
@@ -91,7 +91,7 @@ a {
   color: #6f6f6f;
 }
 #second-place {
-  background-color: #ffd500;
+  background-color: #f0788c;
   float: left;
   height: 3000px;
   width: 3000px;
@@ -132,7 +132,7 @@ a {
   color: #fff;
 }
 #fourth-place {
-  background-color: #e9c92d;
+  background-color: #f6b1c3;
   float: left;
   position: relative;
   width: 3000px;
